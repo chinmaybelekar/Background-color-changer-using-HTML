@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title> Color Changer </title>
+		<style>
+			* { font-size: 45px; font-family: Cambria; }
+		</style>		
+	</head>
+	<body>
+		<center>
+			<h1> Color Changer </h1>
+			<form onsubmit="return cm()">
+				<input type= "submit" value="Change Bg Color"></input>
+			</form>
+			<script>
+				function cm()
+					{
+						event.preventDefault();
+						let colors = ["blue", "yellow", "black", "white"];
+						let r = parseInt(Math.random() * colors.length);
+						document.body.style.backgroundColor= colors[r];
+					}
+			</script>
+		</center>
+
+	</body>
+
+</html>
